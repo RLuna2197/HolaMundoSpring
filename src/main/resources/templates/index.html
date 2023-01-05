@@ -10,6 +10,7 @@
         <p th:text="${mensaje}"></p>
         <p th:text="${saludo}"></p>
         <br>
+        <div th:if="${personas != null and !personas.isEmpty() }">
         <table>
             <tr>
                 <th>Nombre</th>
@@ -24,6 +25,7 @@
                 <td th:text="${persona.telefono}">Mostrar telefono</td>
             </tr>
         </table>
+        </div>
     </div>
 
 </body>
